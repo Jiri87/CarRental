@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("picture/chevrolet-6194626_1280.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 100px; 
+}
+
+h1 {
+    font-size: 80px;
+    color: #5991db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu {
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 50px;
+    padding: 10px;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color:#3d7aca ;
+    font-size: 20px;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.menu ul li a:hover {
+    background: #202d3c;
+}
+
+article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+article header {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+
+article p {
+    line-height: 1.6;
+    color: #333;
+}
+
+.picturecar {
+    max-width: 70%;  
+    height: auto;     
+    display: block;   
+    margin: 10px auto; 
+    border-radius: 10px; 
+}
+
+.form {
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(37, 4, 118, 0.2);
+    width: 350px;
+    font-size: 30px;
+
+}
+
+.formular label {
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.form input, .form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form select {
+    cursor: pointer;
+}
+
+.form input:focus, .form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.button_odeslat {
+    background-color: #3596dc; /* Červená barva */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+
+.button_zpet {
+    background-color: #dc3545; /* Červená barva */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
