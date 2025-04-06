@@ -13,8 +13,9 @@ require_once "hlavicka.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Objednávkový formulář</title>
 </head>
+
 <body>
-    <form action="form.php" class="form" method="POST" >
+    <form  action="databaze/zpracujForm.php" class="form" method="POST" >
         <label for="jmeno">Jméno</label>
         <input id="jmeno" type="text" name="jmeno" placeholder="Jméno" required>
 
@@ -24,10 +25,9 @@ require_once "hlavicka.php";
         <label for="email">Email</label>
         <input id="email" type="email" name="email" placeholder="Email" required>
         
-        <label for="telcislo">Telefonní číslo</label>
-        <input id="telcislo" type="tel" name="telcislo" placeholder="+420 Telefonní číslo" pattern="\+?[0-9\s-]{9,15}" title="Zadejte telefonní číslo (např. +420 123 456 789)"  required>
-    
-        <label for="select">Vyberte typ vozidla:</label>
+        <label for="telefon">Telefonní číslo</label>
+        <input id="telefon" type="tel" name="telefon" placeholder="+420 Telefonní číslo"pattern="\+?[0-9\s\-]{9,15}"title="Zadejte telefonní číslo (např. +420 123 456 789)" required>
+        <label for="selectCar">Vyberte typ vozidla:</label>
     <select id="selectCar" name="vozidlo" required onchange="vypocetCeny()">
         <option value="" disabled selected>-- Vyberte vozidlo --</option>
         <option value="dodge_challenger_srt">Dodge Challenger SRT</option>
@@ -45,17 +45,18 @@ require_once "hlavicka.php";
         <option value="chevrolet_camaro_silver">Chevrolet Camaro stříbrný</option>
         <option value="chevrolet_corveta">Chevrolet Corveta</option>
     </select>
-    <label for="select">Doba zapůjčení</label>
+    
+    <label for="selectTime">Doba zapůjčení</label>
     <select id="selectTime" name="doba_zapujceni" required onchange="vypocetCeny()">
-        <option value="one_day">1 den</option>
-        <option value="two_days">2 dny</option>
-        <option value="week">týden</option>
+        <option value="den">1 den</option>
+        <option value="dva_dny">2 dny</option>
+        <option value="tyden">týden</option>
     </select>
-    <br/>
-   
     <script src="javascript/cenik.js"></script>
-
+    <br/>
     <label>Celková cena: <span id="totalPrice">0 Kč</span></label>
+   
+    <input type="hidden" id="hiddenTotalPrice" name="celkova_cena" value=" ">
     <br/>
     <button type="submit" class="button_odeslat">Odeslat objednávku</button>
 

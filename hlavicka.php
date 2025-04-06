@@ -13,6 +13,7 @@
                 <li><a href="index.php#chevy">Chevrolet</a></li>
                 <li><a href="form.php">Objednávkový formulář</a></li>
                 <li><a href="kontakt.php">Kontakt</a></li>
+                <li><a href="admin.php">Administrátor</a></li>
             </ul>
          </nav>
  </header>

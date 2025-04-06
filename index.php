@@ -9,7 +9,7 @@
 
 <body>
 
-<?php require_once "hlavicka.php"; ?>
+<?php require_once "hlavicka.php"?>
     
 
     <article>

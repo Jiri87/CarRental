@@ -148,4 +148,41 @@ article p {
     cursor: pointer;
     transition: background 0.3s ease-in-out;
 }
+.vypis {
+    list-style-type: none;
+    padding: 0;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow:  4px 6px rgba(0,0,0,0.1);
+}
+
+.vypis li {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.vypis li:last-child {
+    border-bottom: none;
+}
+
+.button_zpet_obj {
+    margin-top: 30px;
+    padding: 20px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button_zpet:hover {
+    background-color: #2980b9;
+}
+
 
