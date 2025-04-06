@@ -1,6 +1,6 @@
 
 const cenik =  {
-"dodge_challenger_srt": 2500,
+    "dodge_challenger_srt": 2500,
     "dodge_challenger_orange": 2400,
     "dodge_charger_green": 2300,
     "dodge_charger_silver": 2200,
