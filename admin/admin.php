@@ -48,6 +48,8 @@ $objednavky = $stmt -> fetchAll();
     </tr>
     <?php endforeach; ?>
 </table>
-<button class="button_zpet_admin" type="submit" onclick="window.location.href='../index.php'">Zpět</button>
+<button class="button_zpet_admin" type="submit" onclick="window.location.href='../index.php'">Hlavní stránka</button>
+<button class="button_odhlasit" type="submit" onclick="window.location.href='../logout.php'">Odhlásit se</button>
+
 </body>
 </html>

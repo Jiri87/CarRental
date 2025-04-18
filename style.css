@@ -172,7 +172,7 @@ article p {
 
 .button_zpet_obj, .button_log, .button_zpet_admin {
     margin-top: 30px;
-    padding: 20px 30px;
+    padding: 20px 25px;
     background-color: #2980b9;
     color: white;
     border: none;
@@ -241,6 +241,20 @@ table, th, td {
     background-color: #ddd;
 }
 
+
+.button_odhlasit {
+margin-top: 25px;
+padding: 20px 25px;
+background-color: #d5104b;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 25px;
+cursor: pointer;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
 
 
 
