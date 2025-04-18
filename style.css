@@ -29,6 +29,7 @@ h1 {
 
 }
 
+
 .menu {
     display:flex;
     justify-content: center;
@@ -48,7 +49,7 @@ h1 {
 
 .menu ul li a {
     color:#3d7aca ;
-    font-size: 20px;
+    font-size: 30px;
     padding: 20px 20px;
     text-decoration: none;
     transition: 0.3s ease-in-out;
@@ -79,8 +80,10 @@ article header {
 
 
 article p {
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 2;
     color: #333;
+   
 }
 
 .picturecar {
@@ -127,7 +130,7 @@ article p {
 }
 
 .button_odeslat {
-    background-color: #3596dc; /* Červená barva */
+    background-color: #2980b9; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -139,7 +142,7 @@ article p {
 
 
 .button_zpet {
-    background-color: #dc3545; /* Červená barva */
+    background-color: #dc3545; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -167,10 +170,10 @@ article p {
     border-bottom: none;
 }
 
-.button_zpet_obj {
+.button_zpet_obj, .button_log, .button_zpet_admin {
     margin-top: 30px;
     padding: 20px 30px;
-    background-color: #3498db;
+    background-color: #2980b9;
     color: white;
     border: none;
     border-radius: 5px;
@@ -184,5 +187,63 @@ article p {
 .button_zpet:hover {
     background-color: #2980b9;
 }
+
+.login-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.login-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #2980b9;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 3px solid black;
+    padding: 6px;
+    background-color: #ddd;
+}
+
+
+
+
+
 
 

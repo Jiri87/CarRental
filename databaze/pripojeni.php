@@ -13,11 +13,10 @@ try {
     ]);
 
 
-    echo "Připojení k databázi bylo úspěšné!";
+    //echo "Připojení k databázi bylo úspěšné!";
 
 } catch (PDOException $e) {
     die ("Chyba připojení k databázi: " . $e -> getMessage());
 }
-
 
 ?>
