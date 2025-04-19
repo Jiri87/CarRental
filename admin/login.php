@@ -35,12 +35,13 @@ if ($_SERVER["REQUEST_METHOD"]=== "POST") {
     <input type="text" name="username" placeholder="Uživatelské jméno" required>
     <input type="password" name="password" placeholder="Heslo" required>
     <button class="button_log" type="submit">Přihlásit</button>  
-    <button class="zpet" type="submit" onclick="window.location.href='../index.php'">Zpět</button>
-</form>
+    <button class="zpet" type="submit" onclick="window.location.href='../index.php'">Hlavní stránka</button>
 
-<?php  if (isset($error)): ?>
-    <p style="color:red"><?= htmlspecialchars($error) ?></p>
-<?php endif; ?>   
+    <?php  if (isset($error)): ?>
+    <p  style="color:red"><strong><?= htmlspecialchars($error) ?></strong></p>
+    <?php endif; ?>   
+
+</form>
 
 </body>
 </html>

@@ -17,16 +17,18 @@ $stmt = $pdo -> query("SELECT * FROM objednavky ORDER BY datum_objednavky DESC")
 $objednavky = $stmt -> fetchAll();
 ?>
 
-<h1>Objednávky</h1>
+<h1>Objednávky USCAR</h1>
 
 <table>
     <tr>
+        <th>id</th>
         <th>Jméno</th>
         <th>Příjmení</th>
         <th>Email</th>
         <th>Telefon</th>
         <th>Vozidlo</th>
         <th>Doba zapůjčení</th>
+        <th>Celková cena</th>
         <th>Datum objednávky</th>
         <th>Akce</th>
     </tr>
@@ -34,12 +36,14 @@ $objednavky = $stmt -> fetchAll();
        <?php  foreach ($objednavky as $obj): ?>
     </tr>
     <tr>
+        <td><?= htmlspecialchars($obj['id']) ?></td>
         <td><?= htmlspecialchars($obj['jmeno']) ?></td>
         <td><?= htmlspecialchars($obj['prijmeni']) ?></td>
         <td><?= htmlspecialchars($obj['email']) ?></td>
         <td><?= htmlspecialchars($obj['telefon']) ?></td>
         <td><?= htmlspecialchars($obj['vozidlo']) ?></td>
         <td><?= htmlspecialchars($obj['doba_zapujceni']) ?></td>
+        <td><?= htmlspecialchars($obj['celkova_cena']) ?></td>
         <td><?= htmlspecialchars($obj['datum_objednavky']) ?></td>
         <td>
             <a href="edit.php?id=<?= $obj['id'] ?>">Upravit</a> |

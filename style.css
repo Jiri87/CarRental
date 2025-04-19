@@ -152,6 +152,7 @@ article p {
     transition: background 0.3s ease-in-out;
 }
 .vypis {
+    margin:30px;
     list-style-type: none;
     padding: 0;
     background: #ffffff;
@@ -170,7 +171,7 @@ article p {
     border-bottom: none;
 }
 
-.button_zpet_obj, .button_log, .button_zpet_admin {
+.button_zpet_obj, .button_log, .button_zpet_admin, .button_ulozit {
     margin-top: 30px;
     padding: 20px 25px;
     background-color: #2980b9;
@@ -190,7 +191,8 @@ article p {
 
 .login-form {
     background-color: #fff;
-    padding: 30px;
+    margin: 30px 30px 30px 30px;
+    padding: 40px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     width: 100%;
@@ -200,15 +202,16 @@ article p {
 
 .login-form label {
     display: block;
-    margin: 15px 0 5px;
+    margin: 15px 0 10px;
     font-weight: bold;
 }
 
 .login-form input {
     width: 100%;
+    margin:5px;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
@@ -218,7 +221,7 @@ article p {
     padding: 12px;
     background-color: #2980b9;
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -235,6 +238,7 @@ article p {
 }
 
 table, th, td {
+    margin:30px;
     border-collapse: collapse;
     border: 3px solid black;
     padding: 6px;
@@ -243,12 +247,12 @@ table, th, td {
 
 
 .button_odhlasit {
-margin-top: 25px;
+margin-top: 20px;
 padding: 20px 25px;
 background-color: #d5104b;
 color: white;
 border: none;
-border-radius: 5px;
+border-radius: 15px;
 font-size: 25px;
 cursor: pointer;
 display: block;

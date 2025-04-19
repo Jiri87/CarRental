@@ -20,6 +20,7 @@ require_once "hlavicka.php";
         <h2>Kontakt</h2>
     </header>
         <section class="kontakt">
+            <P>Email: USCAR@Gman.com</P>
             <p>U programátora 41</p>
             <p>Vrdy</p>
             <p>Tel: 123456789</p>
