@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styly/style.css">
     <meta name="viewport" content="width=device-width, viewport-fit=cover">
     <title>Autopůjčovna</title>
 </head>
