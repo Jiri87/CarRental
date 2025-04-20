@@ -9,7 +9,7 @@
     <title>Objednávky</title>
 </head>
 <body>
-
+<!-- připojení k databázi-->
 <?php
 require "../databaze/pripojeni.php";
 
@@ -18,6 +18,8 @@ $objednavky = $stmt -> fetchAll();
 ?>
 
 <h1>Objednávky USCAR</h1>
+
+<!--Tabulka pro správu objednávek-->
 
 <table>
     <tr>
@@ -30,7 +32,8 @@ $objednavky = $stmt -> fetchAll();
         <th>Doba zapůjčení</th>
         <th>Celková cena</th>
         <th>Datum objednávky</th>
-        <th>Akce</th>
+        <th>Editace objednávky</th>
+        <th>Vymazání objednávky</th>
     </tr>
     <tr>
        <?php  foreach ($objednavky as $obj): ?>
@@ -46,9 +49,18 @@ $objednavky = $stmt -> fetchAll();
         <td><?= htmlspecialchars($obj['celkova_cena']) ?></td>
         <td><?= htmlspecialchars($obj['datum_objednavky']) ?></td>
         <td>
-            <a href="edit.php?id=<?= $obj['id'] ?>">Upravit</a> |
-            <a href="delete.php?id=<?= $obj['id'] ?>" onclick="return confirm('Opravdu smazat?')">Smazat</a>
+        
+            <form method="POST" action="edit.php" style="display:line,">
+                <input type="hidden" name="id" value="<?= $obj['id'] ?>">
+                <button type="submit" class="button_edit">Editace</button>
+            </form>
         </td>
+        <td>  
+            <form method="POST" action="delete.php" style="display:inline;">
+                <input type="hidden" name="id" value="<?= $obj['id'] ?>">
+                <button type="submit" class="button_delete" onclick="return confirm('Opravdu smazat?')">Smazat</button>
+            </form>
+        </td>  
     </tr>
     <?php endforeach; ?>
 </table>

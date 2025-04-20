@@ -1,3 +1,4 @@
+//JS script pro výpočet základní ceny
 document.addEventListener("DOMContentLoaded", function () {
     // Ceník vozidel
     const cenik = {

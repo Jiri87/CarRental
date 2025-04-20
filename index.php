@@ -8,7 +8,7 @@
 </head>
 
 <body>
-
+<!-- připojení k databázi-->
 <?php require_once "hlavicka.php"?>
     
 

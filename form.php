@@ -13,7 +13,7 @@ require_once "hlavicka.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Objednávkový formulář</title>
 </head>
-
+<!-- Formulář získá data od zákazníka-->
 <body>
     <form  action="databaze/zpracujForm.php" class="form" method="POST" >
         <label for="jmeno">Jméno</label>
@@ -26,7 +26,7 @@ require_once "hlavicka.php";
         <input id="email" type="email" name="email" placeholder="Email" required>
         
         <label for="telefon">Telefonní číslo</label>
-        <input id="telefon" type="tel" name="telefon" placeholder="+420 Telefonní číslo"pattern="\+?[0-9\s\-]{9,15}"title="Zadejte telefonní číslo (např. +420 123 456 789)" required>
+        <input id="telefon" type="tel" name="telefon" placeholder="+420 Telefonní číslo"pattern="\+420[0-9\s\-]{9,15}"title="Zadejte telefonní číslo (např. +420 123 456 789)" required>
         <label for="selectCar">Vyberte typ vozidla:</label>
     <select id="selectCar" name="vozidlo" required onchange="vypocetCeny()">
         <option value="" disabled selected>-- Vyberte vozidlo --</option>
@@ -52,6 +52,7 @@ require_once "hlavicka.php";
         <option value="dva_dny">2 dny</option>
         <option value="tyden">týden</option>
     </select>
+    <!-- Script pro výpočet aktuální ceny -->
     <script src="javascript/cenik.js"></script>
     <br/>
     <label>Celková cena: <span id="totalPrice">0 Kč</span></label>

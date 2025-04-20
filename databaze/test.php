@@ -1,6 +1,6 @@
 
 
-
+<!-- testovací skript pro kontrolu připojení k databázi -->
 <?php
 //připojení k databázi
 require "pripojeni.php";

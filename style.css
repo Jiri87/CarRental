@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
+/* index */
 html {
     scroll-behavior: smooth;
 }
@@ -94,6 +94,7 @@ article p {
     border-radius: 10px; 
 }
 
+/* Objednávkový formulář */
 .form {
     padding: 20px;
     border-radius: 10px;
@@ -237,12 +238,13 @@ article p {
     margin-bottom: 10px;
 }
 
-table, th, td {
+table, tr,  th, td {
     margin:30px;
     border-collapse: collapse;
     border: 3px solid black;
     padding: 6px;
     background-color: #ddd;
+    
 }
 
 
@@ -259,6 +261,30 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 }
+
+.button_edit {
+    margin: 10px 25px 10px;
+    padding: 12px 20px;
+    background-color: #3cac1a;
+    color:white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor:pointer;
+    border:none;
+}
+
+
+.button_delete {
+    margin: 10px 25px 10px;
+    padding: 12px 20px;
+    background-color: #dc3545;
+    color:white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor:pointer;
+    border:none;
+}
+
 
 
 

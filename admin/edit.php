@@ -11,8 +11,9 @@
 <body>
     <h1>Správa objednávek USCAR</h1>
     <?php
+
 require "../databaze/pripojeni.php";
-$id = $_GET['id'] ?? null;
+$id = $_POST['id'] ?? null;
 
 if (!$id) {
     die("Chybí ID objednávky.");
@@ -26,7 +27,7 @@ if (!$obj) {
     die ("Objednavka nenalezena.");
 }
 ?>
-
+<!-- formulář pro editaci-->
 <form method="post" class="form" action="update.php">
     <input type="hidden" name="id" value="<?= $obj['id'] ?>">
     <label>Jméno: <input name="jmeno" value="<?= htmlspecialchars($obj['jmeno']) ?>"></label><br>
@@ -40,9 +41,6 @@ if (!$obj) {
     
     <button class="button_ulozit" type="submit">Uložit změny</button>
 </form>
-
-
-
 
 </body>
 </html>

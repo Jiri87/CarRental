@@ -1,5 +1,8 @@
-<?php
 
+
+
+<?php
+//Vytvoření základního připojení k databázi
 $host = "localhost";
 $dbname = "objednavky_db";
 $username = "root";
