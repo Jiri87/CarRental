@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const hiddenInput = document.getElementById("hiddenTotalPrice");   // Skrytý input
 
         if (car && time) {
-            const cena = cenik[car] * dny[time];
+            const cena = cenik[car] * dny[time] * 0.2 + cenik[car] * dny[time]  ;
             console.log(`Vypočítaná cena: ${cena} Kč`); // Debugging
             celkovaCenaElement.textContent = cena + " Kč";
             hiddenInput.value = cena;  // Nastavení hodnoty do skrytého inputu

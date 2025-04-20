@@ -46,7 +46,7 @@ $objednavky = $stmt -> fetchAll();
             <td><?= htmlspecialchars($obj['telefon']) ?></td>
             <td><?= htmlspecialchars($obj['vozidlo']) ?></td>
             <td><?= htmlspecialchars($obj['doba_zapujceni']) ?></td>
-            <td><?= htmlspecialchars($obj['celkova_cena']) ?></td>
+            <td><?= htmlspecialchars($obj['celkova_cena']) ?> Kč</td>
             <td><?= htmlspecialchars($obj['datum_objednavky']) ?></td>
                 
                 <td>
