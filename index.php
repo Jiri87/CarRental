@@ -43,12 +43,12 @@
         </header>
             <section>
                 <p>Máme na výběr ze dvou modelů vozidla Dodge. Tím prvím je dvoudvéřová klasika Challanger.</p>
-                <img class="picturecar" src="picture/dodge_challenfer1.jpg">
-                <img class="picturecar" src="picture/dodge_challanger2.jpg">
+                <img class="picturecar" src="obrazky/dodge_challenfer1.jpg">
+                <img class="picturecar" src="obrazky/dodge_challanger2.jpg">
                 <p>Pro pohodlnější svezení máme v nabídce model Charger</p>
-                <img class="picturecar" src="picture/dodge_charger1.jpg">
-                <img class="picturecar" src="picture/dodge_charger2.jpg">
-                <img class="picturecar" src="picture/dodge_charger3.jpg">
+                <img class="picturecar" src="obrazky/dodge_charger1.jpg">
+                <img class="picturecar" src="obrazky/dodge_charger2.jpg">
+                <img class="picturecar" src="obrazky/dodge_charger3.jpg">
             </section>
 
         <header>
@@ -56,9 +56,9 @@
         </header>
             <section>
                  <p>V nabídce máme dva krásné klasické mustangy. Pokud ovšem zatoužíte po hromadě koní v americké klasice, máme zde poslední verzi tohoto amerického hřebce </p>
-                 <img class="picturecar" src="picture/ford_mustang1.jpg">¨
-                 <img class="picturecar" src="picture/ford_mustang2.jpg">
-                 <img class="picturecar" src="picture/ford_mustang3.jpg">
+                 <img class="picturecar" src="obrazky/ford_mustang1.jpg">¨
+                 <img class="picturecar" src="obrazky/ford_mustang2.jpg">
+                 <img class="picturecar" src="obrazky/ford_mustang3.jpg">
             </section>
 
             <header>
@@ -67,8 +67,8 @@
 
             <section>
                 <p>Hledáte pořádné americké suv. Yukon od GMC je ta správná volba pro vás. </p>
-                <img class="picturecar" src="picture/gmc1.jpg">
-                <img class="picturecar" src="picture/gmc2.jpg">
+                <img class="picturecar" src="obrazky/gmc1.jpg">
+                <img class="picturecar" src="obrazky/gmc2.jpg">
             </section>
 
             <header>
@@ -77,10 +77,10 @@
 
             <section>
                 <p></p>
-                <img class="picturecar" src="picture/chevrolet_retro.jpg">
-                <img class="picturecar" src="picture/chevrolet_camaro.jpg">
-                <img class="picturecar" src="picture/chevrolet_camaro1.jpg">
-                <img class="picturecar" src="picture/chevrolet_corvet.jpg">
+                <img class="picturecar" src="obrazky/chevrolet_retro.jpg">
+                <img class="picturecar" src="obrazky/chevrolet_camaro.jpg">
+                <img class="picturecar" src="obrazky/chevrolet_camaro1.jpg">
+                <img class="picturecar" src="obrazky/chevrolet_corvet.jpg">
             </section>
         </article>
  </body>

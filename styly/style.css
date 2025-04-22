@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: url("../picture/chevrolet-6194626_1280.jpg") no-repeat center center fixed;
+    background: url("../obrazky/chevrolet-6194626_1280.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
